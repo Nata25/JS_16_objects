@@ -6,13 +6,6 @@
     </head>
     <body>
         <script type="text/javascript">
-            // function Human(name) {
-            //     this.name = name;
-            //     this.age = 30;
-            //     this.sex = "m";
-            //     this.height = 175;
-            //     this.weight = 60;
-            // }
 
             var Human = {
                 name: "nobody",
@@ -26,7 +19,7 @@
                 this.school = "Cambridge";
                 this.studentship = 0;
                 this.watchSerials = function() {
-                    console.log("- Don't laugh, but I love to watch BBC Serlock Series.");
+                    console.log("- Don't laugh, but I love to watch BBC Sherlock Series.");
                 }
             }
 
@@ -65,7 +58,9 @@
 
 
             var kat = new Worker("Kat");
-            console.log("Kat dreams to work at " + kat.workplace + " and earn $" + kat.salary + " a month.");
+            console.log("Kat also would like to say one day:");
+            kat.work();
+            console.log("...and to earn $" + kat.salary + " a month.")
             kat.workplace = "freelance";
             kat.salary = 500;
             console.log("But currently she works as " + kat.workplace + " and hopes to earn at least $" + kat.salary + " during the next two months.");
