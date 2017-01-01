@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Objects and Classes in JS</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function Human() {
+                this.name = "nobody";
+                this.age = 30;
+                this.sex = "m";
+                this.height = 175;
+                this.weight = 60;
+            }
+
+            // var Human = {
+            //     name: "nobody",
+            //     age: 30,
+            //     sex: "m",
+            //     height: 175,
+            //     weight: 60
+            // }
+
+            function Worker(name) {
+                this.name = name;
+                this.workplace = "Google";
+                this.salary = 500;
+                this.work = function() {
+                    console.log("– I'm working at " + this.workplace + "!");
+                };
+            }
+
+            // Worker.prototype = Human;
+
+            var ivan = new Worker("Ivan");
+            console.log("Hi, here's " + ivan.name + ", he's a Worker:");
+            ivan.work();
+            console.log(ivan);
+            console.log(Worker);
+            // console.log(Human);
+
+        </script>
+    </body>
+</html>
